@@ -1,38 +1,77 @@
+html, body {
+  height: 100%;
+}
+
 .App {
-  text-align: center;
+  background: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.landing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #ffffff;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.landing-welcome {
+  justify-self: flex-end;
+  margin-right: 100px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing-welcome img {
+  display: block;
+  margin-bottom: 61px;
+}
+
+.button {
+  cursor: pointer;
+  display: block;
+  padding: 13px 40px;
+  background: #FF7A00;
+  border-radius: 5px;
+  border: none;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.landing-form {
+  margin-left: 100px;
+  justify-self: flex-start;
+  background: #161616;
+  border-radius: 10px;
+  width: 416px;
+  padding: 20px 33px 44px 33px;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.landing-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: rgba(210, 210, 210, 0.25);
+  border: 2px solid #BCBCBC;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.landing-form input:focus {
+  color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 3px 1px #FF7A00;
+  border: 2px solid #FF7A00;
+}
+
+.landing-form button {
+  width: 100%;
 }
