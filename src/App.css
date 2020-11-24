@@ -65,7 +65,21 @@ html, body {
   color: #ffffff;
 }
 
-.landing-form input:focus {
+.landing-form textarea {
+  font-family: Avenir, sans-serif;
+  display: block;
+  width: 100%;
+  height: 122px;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: rgba(210, 210, 210, 0.25);
+  border: 2px solid #BCBCBC;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.landing-form input:focus, .landing-form textarea:focus {
   color: #ffffff;
   outline: none;
   box-shadow: 0 0 3px 1px #FF7A00;

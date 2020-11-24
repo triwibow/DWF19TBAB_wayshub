@@ -6,7 +6,7 @@ function Login(){
         <div className="landing-container">
             <div className="landing-welcome">
                 <img src={title} alt ="title" />
-                <button className="button">Sign In</button>
+                <button className="button">Sign Up</button>
             </div>
             <div className="landing-form">
                 <h1>Sign In</h1>
