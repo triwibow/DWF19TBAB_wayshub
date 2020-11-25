@@ -1,25 +1,36 @@
-import React, { useState } from 'react';
-import Login from './component/Login';
-import Register from './component/Register';
-import title from  './title.svg';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
+
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Home from './pages/Home';
 
 function App() {
-  const [isLoginPage, setLoginPage] = useState(true);
-
-  const handleLoginPage = () => {
-    (isLoginPage === true)? setLoginPage(false):setLoginPage(true);
-  }
+  
 
   return (
-    <div className="App">
-      <div className="landing-container">
-            <div className="landing-welcome">
-                <img src={title} alt ="title" />
-                <button className="button" onClick={handleLoginPage}>{(isLoginPage === true)? "Sign Up": "Sign In"}</button>
-            </div>
-            {isLoginPage ? <Login />: <Register />}
-        </div>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route path="/" exact>
+            <Home/>
+          </Route>
+          <Route path="/login">
+            <Login/>
+          </Route>
+          <Route path="/register">
+            <Register/>
+          </Route>
+          <Route path="/home">
+            <Home/>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
