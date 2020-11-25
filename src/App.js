@@ -8,6 +8,7 @@ import {
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Home from './pages/Home';
+import Subscribtion from './pages/Subscribtion';
 
 function App() {
   
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home/>
+          </Route>
+          <Route path="/subscribtion">
+            <Subscribtion/>
           </Route>
         </Switch>
       </div>

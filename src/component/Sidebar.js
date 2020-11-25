@@ -18,9 +18,9 @@ function Sidebar(){
                     </Link>
                 </li>
                 <li className="sidebar-list-item">
-                    <Link to="/subscription" className="sidebar-link">
+                    <Link to="/subscribtion" className="sidebar-link">
                         <img src={subscription_icon} alt="subscription_icon" />
-                        <span>Subscription</span>
+                        <span>Subscribtion</span>
                     </Link>
                 </li>
             </ul>
