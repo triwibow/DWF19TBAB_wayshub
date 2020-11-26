@@ -1,23 +1,20 @@
+// css
 import '../App.css';
-import Navbar from '../component/Navbar';
-import Sidebar from '../component/Sidebar';
+
+// component
 import Card from '../component/Card';
+
+// fake data
 import SubscribtionVideo from '../api/SubscribtionVideo';
 
-function Home() {
+const Subscribtion = () => {
    return(
-        <div className="wrapper">
-            <Sidebar />
-            <div className="container">
-                <Navbar />
-                <div className="card-content">
-                    {SubscribtionVideo.map(item => {                       
-                        return <Card key={item.id} data={item} />
-                    })}
-                </div>
-            </div>
-        </div>
+    <div className="card-content">
+        {SubscribtionVideo.map(item => {                       
+            return <Card key={item.id} data={item} />
+        })}
+    </div>
    )
 }
 
-export default Home;
+export default Subscribtion;

@@ -1,21 +1,18 @@
+// css
 import '../App.css';
-import Navbar from '../component/Navbar';
-import Sidebar from '../component/Sidebar';
+
+// component
 import Card from '../component/Card';
+
+// fake data
 import PostVideo from '../api/PostVideo';
 
-function Home() {
+const Home = () => {
    return(
-        <div className="wrapper">
-            <Sidebar />
-            <div className="container">
-                <Navbar />
-                <div className="card-content">
-                    {PostVideo.map(item => {                       
-                        return <Card key={item.id} data={item} />
-                    })}
-                </div>
-            </div>
+        <div className="card-content">
+            {PostVideo.map(item => {                       
+                return <Card key={item.id} data={item} />
+            })}
         </div>
    )
 }

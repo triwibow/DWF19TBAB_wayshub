@@ -3,13 +3,13 @@ import {Link} from 'react-router-dom';
 import number_views from '../icon/number_views.svg';
 import refresh_icon from '../icon/refresh_icon.svg';
 
-function Card(props){
-    const {id, title, username, seen, date, thumbnail} = props.data;
+const Card = ({data}) => {
+    const {id, title, username, seen, date, thumbnail} = data;
 
     return(
         <div className="card">
             <img src={thumbnail} alt="card_thumbnail" className="card-thumbnail" />
-            <Link to="/home" className="link">
+            <Link to="/detail" className="link">
                 <h1 className="card-title">{title}</h1>
             </Link>
             <p className="card-username">{username}</p>

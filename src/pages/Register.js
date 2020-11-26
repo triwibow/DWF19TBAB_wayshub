@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import '../App.css';
 import title from '../title.svg';
 
-function Register(){
+const Register = () => {
     return(
         <div className="landing-container">
               <div className="landing-welcome">

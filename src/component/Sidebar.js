@@ -6,7 +6,7 @@ import subscription_icon from '../icon/subscription_icon.svg';
 import user_channel_icon from '../icon/user_channel_icon.svg';
 
 
-function Sidebar(){
+const Sidebar = () => {
     return(
         <div className="sidebar">
             <img src={Icon} alt="icon" className="sidebar-logo"/>

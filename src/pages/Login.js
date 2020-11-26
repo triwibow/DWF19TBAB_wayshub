@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import '../App.css';
 import title from '../title.svg';
 
-function Login(){
+const Login = () => {
 
     return(
         <div className="landing-container">
