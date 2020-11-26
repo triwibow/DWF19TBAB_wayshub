@@ -16,6 +16,7 @@ import Subscribtion from './pages/Subscribtion';
 import Detail from './pages/Detail';
 import AddVideo from './pages/AddVideo';
 import MyChannel from './pages/MyChannel';
+import EditChannel from './pages/EditChannel';
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const defaultContainer = () =>{
               <Route path="/detail" component={Detail} />
               <Route path="/add" component={AddVideo} />
               <Route path="/my-channel" component={MyChannel} />
+              <Route path="/edit-channel" component={EditChannel} />
             </Switch>
         </div>
     </div>
