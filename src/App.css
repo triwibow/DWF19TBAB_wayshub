@@ -525,3 +525,169 @@ html, body {
   color: #FFFFFF;
 }
 /*end comment list */
+
+
+/* form add video edit chanel */
+
+.form-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form-container h1 {
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+
+.form-container textarea {
+  background: rgba(210, 210, 210, 0.25);
+  border: 2px solid #D2D2D2;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 177px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  padding: 16px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.form-container textarea::placeholder{
+  font-family: Avenir, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #B1B1B1;
+}
+
+.inline-input {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 10px;
+}
+
+.inline-input input:first-child {
+  width: 100%;
+  font-family: Avenir, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: rgba(210, 210, 210, 0.25);
+  border: 2px solid #BCBCBC;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.inline-input input:first-child::placeholder {
+  font-family: Avenir, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #B1B1B1;
+}
+
+.file-upload {
+  display: grid;
+  margin-bottom: 20px;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  justify-self:flex-end;
+  background: rgba(210, 210, 210, 0.25);
+  border: 2px solid #BCBCBC;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 0 20px;
+  width: 90%;
+  cursor: pointer;
+}
+
+.file-upload label {
+  overflow-x: hidden;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #B1B1B1;
+  justify-self: center;
+  max-width: 140px;
+
+}
+
+.file-upload input {
+  display: none;
+}
+
+.file-upload img {
+  display: block;
+  justify-self: flex-end;
+  margin-left: 30px;
+  
+}
+
+.input-file-container {
+  display: grid;
+  grid-template-columns: 20%; 
+}
+
+.input-file {
+  display: grid;
+  margin-bottom: 20px;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  background: rgba(210, 210, 210, 0.25);
+  border: 2px solid #BCBCBC;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  
+}
+
+.input-file input {
+  display: none;
+}
+
+.input-file label {
+  overflow-x: hidden;
+  justify-self: flex-start;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #B1B1B1;
+  justify-self: flex-start;
+  max-width: 140px;
+
+}
+
+
+.input-file img {
+  display: block;
+  justify-self: flex-end;
+}
+
+.form-container button {
+  width: 100%;
+}
+
+.form-container input:focus, .form-container textarea:focus {
+  color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 3px 1px #FF7A00;
+  border: 2px solid #FF7A00;
+}
+
+
+
+
+/* end form add video edit chanel */

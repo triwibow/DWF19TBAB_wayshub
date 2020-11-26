@@ -14,6 +14,7 @@ import Register from './pages/Register';
 import Home from './pages/Home';
 import Subscribtion from './pages/Subscribtion';
 import Detail from './pages/Detail';
+import AddVideo from './pages/AddVideo';
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const defaultContainer = () =>{
               <Route exact path="/" component={Home} />
               <Route path="/subscribtion" component={Subscribtion} />
               <Route path="/detail" component={Detail} />
+              <Route path="/add" component={AddVideo} />
             </Switch>
         </div>
     </div>
