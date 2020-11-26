@@ -11,7 +11,7 @@ const Video = () => {
     return(
         <div>
             <div className="video-wrapper">
-                <ReactPlayer className="video-player" url="https://www.youtube.com/watch?v=bgIBFEtJQv4" />
+                <ReactPlayer className="video-player" url="https://www.youtube.com/watch?v=6pzfX1FePdo" />
                 <h1 className="video-title">BBQ Montain Boys Episode 5 : A Day in The Life of Farmer</h1>
                 <span>
                     <img src={number_views} alt="number_views" /> 162K

@@ -15,6 +15,7 @@ import Home from './pages/Home';
 import Subscribtion from './pages/Subscribtion';
 import Detail from './pages/Detail';
 import AddVideo from './pages/AddVideo';
+import MyChannel from './pages/MyChannel';
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const defaultContainer = () =>{
               <Route path="/subscribtion" component={Subscribtion} />
               <Route path="/detail" component={Detail} />
               <Route path="/add" component={AddVideo} />
+              <Route path="/my-channel" component={MyChannel} />
             </Switch>
         </div>
     </div>

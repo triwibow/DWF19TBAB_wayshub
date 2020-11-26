@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className="navbar-menu">
                 <ul className="navbar-menu-list">
                     <li className="navbar-menu-item">
-                        <Link to='' className="navbar-menu-link link">
+                        <Link to='/add' className="navbar-menu-link link">
                             <img src={add_video_icon} alt="add_video_icon"/>
                             <span>Add Video</span>
                         </Link>
