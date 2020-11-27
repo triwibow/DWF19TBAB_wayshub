@@ -1,11 +1,12 @@
-import '../App.css';
+import './video.css';
+import {Link} from 'react-router-dom';
 import ReactPlayer from 'react-player';
 
-import Comment from './Comment';
+import Comment from '../comment/Comment';
 
-import number_views from '../icon/number_views.svg';
-import refresh_icon from '../icon/refresh_icon.svg';
-import navbar_photo_profile from '../icon/navbar_photo_profile.svg';
+import number_views from '../../icon/number_views.svg';
+import refresh_icon from '../../icon/refresh_icon.svg';
+import navbar_photo_profile from '../../icon/navbar_photo_profile.svg';
 
 const Video = () => {
     return(
@@ -24,8 +25,10 @@ const Video = () => {
                 <div className="video-description-header">
                     <img src={navbar_photo_profile} alt="foto profil"/>
                     <div className="video-username">
-                        <span>Egi Jos</span>
-                        <span>15K Subscriber</span>
+                        <Link to="/content-creator" className="link">
+                            <span className="content-creator-username">Egi Jos</span>
+                        </Link>
+                        <span className="count-subscriber">15K Subscriber</span>
                     </div>
                     <div className="button-wrapper">
                         <button className="btn-subscribe">Subscribe</button>

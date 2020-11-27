@@ -5,8 +5,8 @@ import {
 } from 'react-router-dom';
 
 // component
-import Sidebar from './component/Sidebar';
-import Navbar from './component/Navbar';
+import Sidebar from './component/sidebar/Sidebar';
+import Navbar from './component//navbar/Navbar';
 
 // pages
 import Login from './pages/Login';
@@ -17,6 +17,7 @@ import Detail from './pages/Detail';
 import AddVideo from './pages/AddVideo';
 import MyChannel from './pages/MyChannel';
 import EditChannel from './pages/EditChannel';
+import ContentCreator from './pages/ContentCreator';
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const defaultContainer = () =>{
               <Route path="/add" component={AddVideo} />
               <Route path="/my-channel" component={MyChannel} />
               <Route path="/edit-channel" component={EditChannel} />
+              <Route path="/content-creator" component={ContentCreator} />
             </Switch>
         </div>
     </div>

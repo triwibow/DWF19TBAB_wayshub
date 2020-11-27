@@ -1,9 +1,9 @@
 import '../App.css';
 import {useState} from 'react'
 import cover from '../icon/cover.svg';
-import ChannelHeader from '../component/ChannelHeader';
-import ChannelDescription from '../component/ChannelDescription';
-import ChannelVideo from '../component/ChannelVideo';
+import ChannelHeader from '../component/channel/ChannelHeader';
+import ChannelDescription from '../component/channel/ChannelDescription';
+import ChannelVideo from '../component/channel/ChannelVideo';
 
 const MyChannel = () => {
     const [isVideo, setIsVideo] = useState(true);

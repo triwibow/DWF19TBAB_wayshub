@@ -1,9 +1,9 @@
-import '../App.css';
+import './sidebar.css';
 import {Link} from 'react-router-dom';
-import Icon from '../icon/icon.svg';
-import home_icon from '../icon/home_icon.svg';
-import subscription_icon from '../icon/subscription_icon.svg';
-import user_channel_icon from '../icon/user_channel_icon.svg';
+import Icon from '../../icon/icon.svg';
+import home_icon from '../../icon/home_icon.svg';
+import subscription_icon from '../../icon/subscription_icon.svg';
+import user_channel_icon from '../../icon/user_channel_icon.svg';
 
 
 const Sidebar = () => {

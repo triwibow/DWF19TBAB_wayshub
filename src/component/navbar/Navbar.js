@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom';
-import '../App.css';
-import add_video_icon from '../icon/add_video_icon.svg';
-import navbar_photo_profile from '../icon/navbar_photo_profile.svg';
+import './navbar.css';
+import add_video_icon from '../../icon/add_video_icon.svg';
+import navbar_photo_profile from '../../icon/navbar_photo_profile.svg';
 
 const Navbar = () => {
     return(

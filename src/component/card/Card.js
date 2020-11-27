@@ -1,7 +1,7 @@
-import '../App.css';
+import './card.css';
 import {Link} from 'react-router-dom';
-import number_views from '../icon/number_views.svg';
-import refresh_icon from '../icon/refresh_icon.svg';
+import number_views from '../../icon/number_views.svg';
+import refresh_icon from '../../icon/refresh_icon.svg';
 
 const Card = ({data}) => {
     const {id, title, username, seen, date, thumbnail} = data;

@@ -2,8 +2,8 @@
 import '../App.css';
 
 // component
-import Video from '../component/Video';
-import Card from '../component/Card';
+import Video from '../component/video/Video';
+import Card from '../component/card/Card';
 import PostVideo from '../api/PostVideo';
 
 const Detail = () => {

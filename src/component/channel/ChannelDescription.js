@@ -1,4 +1,4 @@
-import '../App.css';
+import './channel.css';
 
 const ChannelDescription = () => {
     return(

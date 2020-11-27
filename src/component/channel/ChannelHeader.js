@@ -1,6 +1,7 @@
-import '../App.css';
+import './channel.css';
 import {Fragment, useState} from 'react';
-import navbar_photo_profile from '../icon/navbar_photo_profile.svg';
+import {Link} from 'react-router-dom';
+import navbar_photo_profile from '../../icon/navbar_photo_profile.svg';
 
 const ChannelHeader = ({current, isVideo}) => {
     const [activeNav, setActiveNav] = useState(true);
@@ -15,11 +16,13 @@ const ChannelHeader = ({current, isVideo}) => {
             <div className="channel-header">
                 <img src={navbar_photo_profile} alt="foto profil"/>
                 <div className="channel-username">
-                    <span>Egi Jos</span>
-                    <span>15K Subscriber</span>
+                    <span className="content-creator-username">Egi Jos</span>
+                    <span className="count-subscriber">15K Subscriber</span>
                 </div>
                 <div className="button-wrapper">
-                    <button className="btn-channel">Edit Channel</button>
+                    <Link to="/edit-channel" className="link">
+                        <button className="btn-channel">Edit Channel</button>
+                    </Link>
                 </div>
             </div>
             <ul className="channel-nav">

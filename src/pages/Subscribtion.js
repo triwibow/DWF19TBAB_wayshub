@@ -2,7 +2,7 @@
 import '../App.css';
 
 // component
-import Card from '../component/Card';
+import Card from '../component/card/Card';
 
 // fake data
 import SubscribtionVideo from '../api/SubscribtionVideo';

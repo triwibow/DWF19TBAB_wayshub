@@ -1,6 +1,6 @@
-import '../App.css';
+import './comment.css';
 import CommentList from './CommentList';
-import navbar_photo_profile from '../icon/navbar_photo_profile.svg'
+import navbar_photo_profile from '../../icon/navbar_photo_profile.svg'
 
 const Comment = () => {
     return(

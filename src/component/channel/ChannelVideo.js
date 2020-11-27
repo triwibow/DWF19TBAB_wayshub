@@ -1,7 +1,7 @@
-import '../App.css';
-import Card from './Card';
+import './channel.css';
+import Card from '../card/Card';
 
-import PostVideo from '../api/PostVideo';
+import PostVideo from '../../api/PostVideo';
 
 const ChannelVideo = () => {
     return(
