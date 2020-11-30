@@ -2,25 +2,30 @@ import './sidebar.css';
 import {Link} from 'react-router-dom';
 import Icon from '../../icon/icon.svg';
 import home_icon from '../../icon/home_icon.svg';
+import home_icon_active from '../../icon/home_icon_active.svg';
 import subscription_icon from '../../icon/subscription_icon.svg';
+import subscription_icon_active from '../../icon/subscription_icon_active.svg';
 import user_channel_icon from '../../icon/user_channel_icon.svg';
 
 
 const Sidebar = () => {
+
+    const pathName = window.location.pathname;
+
     return(
         <div className="sidebar">
             <img src={Icon} alt="icon" className="sidebar-logo"/>
             <ul className="sidebar-list">
                 <li className="sidebar-list-item">
                     <Link to="/" className="sidebar-link">
-                        <img src={home_icon} alt="home_icon" />
-                        <span>Home</span>
+                        <img src={pathName === '/'? home_icon_active:home_icon} alt="home_icon" />
+                        <span className={pathName==='/'? "active":""}>Home</span>
                     </Link>
                 </li>
                 <li className="sidebar-list-item">
                     <Link to="/subscribtion" className="sidebar-link">
-                        <img src={subscription_icon} alt="subscription_icon" />
-                        <span>Subscribtion</span>
+                        <img src={pathName === '/subscribtion'? subscription_icon_active:subscription_icon} alt="subscription_icon" />
+                        <span className={pathName === '/subscribtion'? "active":""}>Subscribtion</span>
                     </Link>
                 </li>
             </ul>

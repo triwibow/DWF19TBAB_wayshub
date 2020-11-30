@@ -1,9 +1,27 @@
-import {Link} from 'react-router-dom';
+import {useState, useEffect} from 'react';
+import {Link, useHistory} from 'react-router-dom';
 import './navbar.css';
 import add_video_icon from '../../icon/add_video_icon.svg';
+import add_video_icon_active from '../../icon/add_video_icon_active.svg';
 import navbar_photo_profile from '../../icon/navbar_photo_profile.svg';
 
+import Dropdown from '../dropdown/Dropdown';
+
 const Navbar = () => {
+    const pathName = window.location.pathname;
+    const [isDropdown, setDropdown] = useState(false);
+    const history = useHistory();
+
+    const handleDropdown = () => {
+        isDropdown? setDropdown(false):setDropdown(true);
+    }
+
+    useEffect(() => {
+        return history.listen(() => {
+            setDropdown(false);
+        })
+    }, [history])
+
     return(
         <div className="navbar">
             <div className="search-bar">
@@ -13,15 +31,16 @@ const Navbar = () => {
                 <ul className="navbar-menu-list">
                     <li className="navbar-menu-item">
                         <Link to='/add' className="navbar-menu-link link">
-                            <img src={add_video_icon} alt="add_video_icon"/>
-                            <span>Add Video</span>
+                            <img src={pathName === '/add'? add_video_icon_active:add_video_icon} alt="add_video_icon"/>
+                            <span className={pathName === '/add'? 'active':''}>Add Video</span>
                         </Link>
                     </li>
 
                     <li className="navbar-menu-item">
-                        <button className="navbar-menu-button">
+                        <button className="navbar-menu-button" onClick={handleDropdown}>
                             <img src={navbar_photo_profile} alt="add_video_icon"/>
                         </button>
+                        {isDropdown ? <Dropdown/>: ""}
                     </li>
                 </ul>
             </div>
